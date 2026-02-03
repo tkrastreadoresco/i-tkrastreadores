@@ -7,7 +7,7 @@ import { tokens } from "@/theme/tokens";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { services } from "@/content/site";
+import { services, contact } from "@/content/site";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import "swiper/css";
@@ -232,7 +232,9 @@ export function HomeServices() {
               whileTap={{ scale: 0.98 }}
             >
               <ButtonLink
-                href="/contato"
+                href={contact.comercial.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 variant="ghost"
                 style={{
                   borderColor: "rgba(255,255,255,0.3)",

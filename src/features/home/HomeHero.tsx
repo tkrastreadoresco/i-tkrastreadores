@@ -6,6 +6,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { tokens } from "@/theme/tokens";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { appLinks, contact } from "@/content/site";
 
 // ─────────────────────────────────────────────────────────────
 // STYLED COMPONENTS
@@ -254,14 +255,18 @@ export function HomeHero() {
 
             <Actions variants={itemVariants}>
               <ButtonLink
-                href="/contato"
+                href={contact.comercial.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 variant="solid"
                 style={{ height: 48, padding: "0 28px" }}
               >
                 Solicitar uma cotação
               </ButtonLink>
               <AppLink
-                href="#"
+                href={appLinks.android}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

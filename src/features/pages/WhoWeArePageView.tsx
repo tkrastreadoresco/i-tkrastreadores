@@ -235,7 +235,7 @@ export function WhoWeArePageView() {
               <ButtonLink href="/servicos">
                 Ver soluções <ArrowRight size={18} weight="bold" />
               </ButtonLink>
-              <ButtonLink href={contact.whatsappLink} variant="ghost">
+              <ButtonLink href={contact.comercial.link} target="_blank" rel="noopener noreferrer" variant="ghost">
                 Falar com especialista
               </ButtonLink>
             </Actions>
@@ -331,17 +331,21 @@ export function WhoWeArePageView() {
             </CTALead>
             <CTAActions>
               <ButtonLink
-                href={contact.whatsappLink}
+                href={contact.comercial.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ background: "white", color: tokens.colors.black }}
               >
                 Falar com especialista
               </ButtonLink>
               <ButtonLink
-                href="/contato"
+                href={contact.comercial.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 variant="ghost"
                 style={{ borderColor: "rgba(255,255,255,0.3)", color: "white" }}
               >
-                Ir para contato
+                Solicitar orçamento
               </ButtonLink>
             </CTAActions>
           </CTA>

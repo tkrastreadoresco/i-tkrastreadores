@@ -6,7 +6,7 @@ import Link from "next/link";
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
 import { Container } from "@/components/ui/Container";
-import { headerNav, services } from "@/content/site";
+import { headerNav, services, contact } from "@/content/site";
 import { tokens } from "@/theme/tokens";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -591,15 +591,15 @@ const drawerVariants = {
 const ctaItems = [
     {
         icon: <Globe size={20} weight="bold" />,
-        title: "Portal Web",
-        desc: "Acesse pelo navegador",
-        href: "https://sistema.tkrastreadores.com.br",
+        title: "Rastreamento e Gestão de Frotas",
+        desc: "FullTrack App",
+        href: "https://fulltrackapp.com/emp/7191-tk-rastreadores",
     },
     {
         icon: <Devices size={20} weight="bold" />,
-        title: "TK Fleet App",
-        desc: "Baixe o aplicativo",
-        href: "#app",
+        title: "Telemetria, Logística e Gestão",
+        desc: "SystemSatx",
+        href: "https://tracking.systemsatx.com.br/",
     },
 ];
 
@@ -988,7 +988,9 @@ export function SiteHeader() {
 
                             <DrawerFooter>
                                 <DrawerCta
-                                    href="/contato"
+                                    href={contact.comercial.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     onClick={() => setOpen(false)}
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}

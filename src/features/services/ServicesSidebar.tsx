@@ -3,7 +3,7 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
 import { tokens } from "@/theme/tokens";
-import { services } from "@/content/site";
+import { services, contact } from "@/content/site";
 import { usePathname } from "next/navigation";
 import { ButtonLink } from "@/components/ui/Button";
 
@@ -95,7 +95,7 @@ export function ServicesSidebar() {
             <ContactWidget>
                 <ContactTitle>Precisa de ajuda?</ContactTitle>
                 <ContactText>Entre em contato com nossos especialistas para encontrar a melhor solução para sua frota.</ContactText>
-                <ButtonLink href="/contato" variant="solid" style={{ background: 'white', color: 'black', width: '100%' }}>
+                <ButtonLink href={contact.comercial.link} target="_blank" rel="noopener noreferrer" variant="solid" style={{ background: 'white', color: 'black', width: '100%' }}>
                     Falar com consultor
                 </ButtonLink>
             </ContactWidget>

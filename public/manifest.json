@@ -63,8 +63,12 @@
     "related_applications": [
         {
             "platform": "play",
-            "url": "https://play.google.com/store/apps/details?id=com.tkrastreadores.fleet",
-            "id": "com.tkrastreadores.fleet"
+            "url": "https://play.google.com/store/apps/details?id=br.com.tkrastreadores.mobile",
+            "id": "br.com.tkrastreadores.mobile"
+        },
+        {
+            "platform": "itunes",
+            "url": "https://apps.apple.com/br/app/tk-rastreador/id1508021216"
         }
     ],
     "prefer_related_applications": false

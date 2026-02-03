@@ -180,10 +180,7 @@ export function SiteFooter() {
                             <a href={contact.whatsappLink} aria-label="WhatsApp">
                                 <IconWhatsapp />
                             </a>
-                            <a href="#" aria-label="Facebook" style={{ pointerEvents: "none", opacity: 0.5 }}>
-                                <IconFacebook />
-                            </a>
-                            <a href="#" aria-label="Instagram" style={{ pointerEvents: "none", opacity: 0.5 }}>
+                            <a href={contact.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <IconInstagram />
                             </a>
                         </SocialRow>
@@ -222,15 +219,21 @@ export function SiteFooter() {
                         <ColTitle>Contato</ColTitle>
                         <List>
                             <li>
-                                <ContactItem href={contact.whatsappLink}>
+                                <ContactItem href={contact.comercial.link} target="_blank" rel="noopener noreferrer">
                                     <IconWhatsapp />
-                                    {contact.whatsapp}
+                                    Comercial: {contact.comercial.whatsapp}
                                 </ContactItem>
                             </li>
                             <li>
-                                <ContactItem href={`tel:${contact.phone.replace(/\s/g, "")}`}>
-                                    <IconPhone />
-                                    {contact.phone}
+                                <ContactItem href={contact.suporte.link} target="_blank" rel="noopener noreferrer">
+                                    <IconWhatsapp />
+                                    Suporte: {contact.suporte.whatsapp}
+                                </ContactItem>
+                            </li>
+                            <li>
+                                <ContactItem href={contact.monitoramento.link} target="_blank" rel="noopener noreferrer">
+                                    <IconWhatsapp />
+                                    Monitoramento: {contact.monitoramento.whatsapp}
                                 </ContactItem>
                             </li>
                             <li>

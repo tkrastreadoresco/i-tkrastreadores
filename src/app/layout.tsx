@@ -121,12 +121,12 @@ export const metadata: Metadata = {
   // ─── APP LINKS ─────────────────────────────────────────────
   appLinks: {
     ios: {
-      url: "https://apps.apple.com/app/tk-fleet",
-      app_store_id: "app_store_id",
+      url: "https://apps.apple.com/br/app/tk-rastreador/id1508021216",
+      app_store_id: "id1508021216",
     },
     android: {
-      package: "com.tkrastreadores.fleet",
-      url: "https://play.google.com/store/apps/details?id=com.tkrastreadores.fleet",
+      package: "br.com.tkrastreadores.mobile",
+      url: "https://play.google.com/store/apps/details?id=br.com.tkrastreadores.mobile",
     },
   },
 

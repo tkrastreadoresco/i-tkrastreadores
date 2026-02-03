@@ -7,10 +7,37 @@ export type Service = {
 };
 
 export const contact = {
-    whatsapp: "+55 (24) 98129-2932",
-    whatsappLink: "https://wa.me/5524981292932",
-    phone: "0800 2423-231",
+    // Comercial - para orçamentos
+    whatsapp: "+55 (69) 9208-7415",
+    whatsappLink: "https://wa.me/556992087415",
+    // Outros contatos
+    monitoramento: {
+        label: "Monitoramento e Assistência",
+        whatsapp: "+55 (69) 9222-1686",
+        link: "https://wa.me/556992221686",
+    },
+    comercial: {
+        label: "Comercial",
+        whatsapp: "+55 (69) 9208-7415",
+        link: "https://wa.me/556992087415",
+    },
+    instalacao: {
+        label: "Instalação / Retirada",
+        whatsapp: "+55 (69) 9930-2241",
+        link: "https://wa.me/5569993022411",
+    },
+    suporte: {
+        label: "Suporte",
+        whatsapp: "+55 (69) 9995-0741",
+        link: "https://wa.me/5569999507415",
+    },
     email: "atendimento@tkrastreadores.com.br",
+    instagram: "https://www.instagram.com/tkrastreadores/",
+};
+
+export const appLinks = {
+    ios: "https://apps.apple.com/br/app/tk-rastreador/id1508021216",
+    android: "https://play.google.com/store/apps/details?id=br.com.tkrastreadores.mobile",
 };
 
 export const headerNav = {
@@ -24,12 +51,12 @@ export const headerNav = {
         label: "Acessar sistema",
         items: [
             {
-                label: "RASTREAMENTO 4G E GESTÃO DE FROTA",
-                href: "#",
+                label: "RASTREAMENTO E GESTÃO DE FROTAS",
+                href: "https://fulltrackapp.com/emp/7191-tk-rastreadores",
             },
             {
-                label: "TELEMETRIA, LOGISTICA E GESTÃO AVANÇADA",
-                href: "#",
+                label: "TELEMETRIA, LOGÍSTICA E GESTÃO AVANÇADA",
+                href: "https://tracking.systemsatx.com.br/",
             },
         ],
     },

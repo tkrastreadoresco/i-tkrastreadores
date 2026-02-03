@@ -7,6 +7,7 @@ import { tokens } from "@/theme/tokens";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { appLinks } from "@/content/site";
 
 // ─────────────────────────────────────────────────────────────
 // STYLED COMPONENTS
@@ -299,7 +300,7 @@ const steps = [
     title: "Baixar o aplicativo TK Rastreadores",
     description: (
       <>
-        Acesse a <Link href="#">google play</Link> ou <Link href="#">app store</Link>, e procure por TK Rastreadores para baixar nosso app.
+        Acesse a <Link href={appLinks.android} target="_blank" rel="noopener noreferrer">Google Play</Link> ou <Link href={appLinks.ios} target="_blank" rel="noopener noreferrer">App Store</Link>, e procure por TK Rastreadores para baixar nosso app.
       </>
     ),
   },

@@ -263,17 +263,21 @@ export function PolicyPage({ title, lead, updatedAt, sections }: PolicyPageProps
                 <CTALead>Entre em contato com nossa equipe.</CTALead>
                 <CTAActions>
                   <ButtonLink
-                    href={contact.whatsappLink}
+                    href={contact.comercial.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{ background: "white", color: tokens.colors.black }}
                   >
                     Falar conosco
                   </ButtonLink>
                   <ButtonLink
-                    href="/contato"
+                    href={contact.comercial.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     variant="ghost"
                     style={{ borderColor: "rgba(255,255,255,0.3)", color: "white" }}
                   >
-                    Ir para contato
+                    Solicitar orçamento
                   </ButtonLink>
                 </CTAActions>
               </CTA>

@@ -513,11 +513,11 @@ export function ServiceDetailPage({ service }: { service: Service }) {
                             </HeroHighlights>
 
                             <HeroActions>
-                                <ButtonLink href={contact.whatsappLink}>
+                                <ButtonLink href={contact.comercial.link} target="_blank" rel="noopener noreferrer">
                                     <WhatsappLogo size={18} weight="fill" />
                                     Falar com especialista
                                 </ButtonLink>
-                                <ButtonLink href="/contato" variant="ghost">
+                                <ButtonLink href={contact.comercial.link} target="_blank" rel="noopener noreferrer" variant="ghost">
                                     Solicitar orçamento
                                     <ArrowRight size={18} weight="bold" />
                                 </ButtonLink>
@@ -829,13 +829,17 @@ export function ServiceDetailPage({ service }: { service: Service }) {
                         </CTAText>
                         <CTAActions>
                             <ButtonLink
-                                href={contact.whatsappLink}
+                                href={contact.comercial.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 style={{ background: "white", color: tokens.colors.black }}
                             >
                                 Falar no WhatsApp
                             </ButtonLink>
                             <ButtonLink
-                                href="/contato"
+                                href={contact.comercial.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 variant="ghost"
                                 style={{ borderColor: "rgba(255,255,255,0.3)", color: "white" }}
                             >

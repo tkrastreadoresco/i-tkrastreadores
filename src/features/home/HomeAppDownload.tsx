@@ -6,6 +6,7 @@ import { tokens } from "@/theme/tokens";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { appLinks } from "@/content/site";
 
 // ─────────────────────────────────────────────────────────────
 // STYLED COMPONENTS
@@ -300,7 +301,9 @@ export function HomeAppDownload() {
 
           <StoreButtons variants={itemVariants}>
             <GooglePlayButton
-              href="#"
+              href={appLinks.android}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -308,7 +311,9 @@ export function HomeAppDownload() {
               Google Play
             </GooglePlayButton>
             <AppStoreButton
-              href="#"
+              href={appLinks.ios}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >

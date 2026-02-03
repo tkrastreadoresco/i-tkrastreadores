@@ -9,7 +9,6 @@ import { contact } from "@/content/site";
 import { tokens } from "@/theme/tokens";
 import {
     WhatsappLogo,
-    Phone,
     EnvelopeSimple,
     Clock,
     ArrowRight,
@@ -375,7 +374,7 @@ export function ContatoPageView() {
                                     <Button type="submit">
                                         Enviar por e-mail <ArrowRight size={18} weight="bold" />
                                     </Button>
-                                    <ButtonLink href={contact.whatsappLink} variant="ghost">
+                                    <ButtonLink href={contact.comercial.link} target="_blank" rel="noopener noreferrer" variant="ghost">
                                         <WhatsappLogo size={18} weight="fill" /> Abrir WhatsApp
                                     </ButtonLink>
                                 </FormActions>
@@ -416,19 +415,35 @@ export function ContatoPageView() {
 
                         <Aside>
                             <ContactCards>
-                                <ContactCard href={contact.whatsappLink}>
+                                <ContactCard href={contact.comercial.link} target="_blank" rel="noopener noreferrer">
                                     <WhatsappLogo size={22} weight="fill" />
                                     <ContactCardText>
-                                        <strong>WhatsApp</strong>
-                                        <span>{contact.whatsapp}</span>
+                                        <strong>Comercial / Orçamentos</strong>
+                                        <span>{contact.comercial.whatsapp}</span>
                                     </ContactCardText>
                                 </ContactCard>
 
-                                <ContactCard href={`tel:${contact.phone.replace(/\s/g, "")}`}>
-                                    <Phone size={22} weight="bold" />
+                                <ContactCard href={contact.suporte.link} target="_blank" rel="noopener noreferrer">
+                                    <WhatsappLogo size={22} weight="fill" />
                                     <ContactCardText>
-                                        <strong>Telefone</strong>
-                                        <span>{contact.phone}</span>
+                                        <strong>Suporte</strong>
+                                        <span>{contact.suporte.whatsapp}</span>
+                                    </ContactCardText>
+                                </ContactCard>
+
+                                <ContactCard href={contact.monitoramento.link} target="_blank" rel="noopener noreferrer">
+                                    <WhatsappLogo size={22} weight="fill" />
+                                    <ContactCardText>
+                                        <strong>Monitoramento e Assistência</strong>
+                                        <span>{contact.monitoramento.whatsapp}</span>
+                                    </ContactCardText>
+                                </ContactCard>
+
+                                <ContactCard href={contact.instalacao.link} target="_blank" rel="noopener noreferrer">
+                                    <WhatsappLogo size={22} weight="fill" />
+                                    <ContactCardText>
+                                        <strong>Instalação / Retirada</strong>
+                                        <span>{contact.instalacao.whatsapp}</span>
                                     </ContactCardText>
                                 </ContactCard>
 
