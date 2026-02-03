@@ -61,12 +61,12 @@ export const metadata: Metadata = {
   // ─── ICONS ─────────────────────────────────────────────────
   icons: {
     icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/logo/icon-red.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "32x32" },
     ],
-    shortcut: "/logo/icon-red.svg",
+    shortcut: "/favicon.svg",
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.svg", type: "image/svg+xml" },
     ],
   },
 
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "TK Rastreadores - Soluções em rastreamento e monitoramento de frotas",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TK Rastreadores | Rastreamento e Monitoramento de Frotas",
     description: siteConfig.description,
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
     creator: "@tkrastreadores",
   },
 
