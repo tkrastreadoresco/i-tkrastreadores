@@ -74,7 +74,6 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 
   // ─── OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ─────────────
-  // As imagens são geradas automaticamente pelo opengraph-image.tsx
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -82,14 +81,22 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: "TK Rastreadores | Rastreamento e Monitoramento de Frotas",
     description: siteConfig.description,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "TK Rastreadores - Soluções em rastreamento e monitoramento de frotas",
+      },
+    ],
   },
 
   // ─── TWITTER CARD ──────────────────────────────────────────
-  // As imagens são geradas automaticamente pelo twitter-image.tsx
   twitter: {
     card: "summary_large_image",
     title: "TK Rastreadores | Rastreamento e Monitoramento de Frotas",
     description: siteConfig.description,
+    images: ["/og-image.png"],
     creator: "@tkrastreadores",
   },
 
@@ -114,12 +121,12 @@ export const metadata: Metadata = {
   // ─── APP LINKS ─────────────────────────────────────────────
   appLinks: {
     ios: {
+      url: "https://apps.apple.com/app/tk-fleet",
       app_store_id: "app_store_id",
-      app_name: "TK Fleet",
     },
     android: {
       package: "com.tkrastreadores.fleet",
-      app_name: "TK Fleet",
+      url: "https://play.google.com/store/apps/details?id=com.tkrastreadores.fleet",
     },
   },
 
